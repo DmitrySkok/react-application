@@ -9,6 +9,11 @@
     font-weight: bold;
     font-size: 16px;
     margin-right: 10px;
+    transition: all 1s;
+
+    &.linkActive {
+      color: $color-warning;
+    }
 
     &:last-child {
       margin-right: 0;

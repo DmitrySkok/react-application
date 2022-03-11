@@ -1,6 +1,7 @@
 import styles from './NavBar.module.scss';
 import Container from '../Container/Container';
 import 'font-awesome/css/font-awesome.min.css';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -14,9 +15,9 @@ const NavBar = () => {
           </div>
 
           <div>
-            <a href='/'>Home</a>
-            <a href='/about'>About</a>
-            <a href='/favorite'>Favorite</a>
+            <NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} to="/">Home</NavLink>
+            <NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} to="/about">About</NavLink>
+            <NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} to="/favorite">Favorite</NavLink>
           </div>
         </div>
     </nav>
