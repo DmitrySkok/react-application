@@ -9,11 +9,9 @@ const SearchForm = () => {
 
   const [searchString, setSearchString] = useState('');
   const dispatch = useDispatch();
-  const textInputValue = TextInput.value;
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(textInputValue);
     dispatch(updateSearchString({searchString}));
   };
 
