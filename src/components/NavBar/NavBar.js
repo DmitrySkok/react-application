@@ -1,5 +1,5 @@
 import styles from './NavBar.module.scss';
-import Container from '../Container/Container';
+// import Container from '../Container/Container';
 import 'font-awesome/css/font-awesome.min.css';
 import { NavLink } from 'react-router-dom';
 
@@ -9,9 +9,7 @@ const NavBar = () => {
     <nav className={styles.navBar}>
         <div className={styles.navBarWrapper}>
           <div>
-            <a href='/'>
-              <span className='fa fa-th-list'></span>
-            </a> 
+            <NavLink to="/"><span className='fa fa-th-list'></span></NavLink>
           </div>
 
           <div>
