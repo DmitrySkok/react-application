@@ -1,4 +1,5 @@
 import Hero from '../Hero/Hero';
+import ListFrom from '../ListForm/ListForm';
 import Lists from '../Lists/Lists';
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <Hero/>
       <Lists />
+      <ListFrom />
     </>
   );
 }
