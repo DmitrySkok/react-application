@@ -21,18 +21,22 @@ const initialState = {
     {
       id: '4',
       listId: '2',
-      title: 'Coffee',
+      title: 'Cappuccino',
       icon: 'coffee',
     }
   ],
 
   cards: [
-    { id: '1', columnId: '1', title: 'This is Going to Hurt' },
-    { id: '2', columnId: '1', title: 'Interpreter of Maladies' },
-    { id: '3', columnId: '2', title: 'Harry Potter' },
-    { id: '4', columnId: '2', title: 'Star Wars' },
-    { id: '5', columnId: '3', title: 'The Witcher' },
-    { id: '6', columnId: '3', title: 'Skyrim' }
+    { id: '1', columnId: '1', isFavorite: false, title: 'This is Going to Hurt' },
+    { id: '2', columnId: '1', isFavorite: false, title: 'Interpreter of Maladies' },
+    { id: '3', columnId: '2', isFavorite: false, title: 'Harry Potter' },
+    { id: '4', columnId: '2', isFavorite: false, title: 'Star Wars' },
+    { id: '5', columnId: '3', isFavorite: false, title: 'The Witcher' },
+    { id: '6', columnId: '3', isFavorite: false, title: 'Skyrim' },
+    { id: '7', columnId: '4', isFavorite: false, title: 'Make the espresso' },
+    { id: '8', columnId: '4', isFavorite: false, title: 'Steam the milk (espresso machine method).' },
+    { id: '9', columnId: '4', isFavorite: false, title: 'OR, heat the milk on the stovetop then froth it.' },
+    { id: '10', columnId: '4', isFavorite: false, title: 'Serve.' }
   ],
 
   lists: [
@@ -43,8 +47,8 @@ const initialState = {
     },
    {
       id: '2',
-      title: 'Test list',
-      description: 'Lorem Ipsum'
+      title: 'Coffee',
+      description: 'How to made coffee'
    }
  ],
 
