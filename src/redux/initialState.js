@@ -27,16 +27,16 @@ const initialState = {
   ],
 
   cards: [
-    { id: '1', columnId: '1', isFavorite: false, title: 'This is Going to Hurt' },
-    { id: '2', columnId: '1', isFavorite: false, title: 'Interpreter of Maladies' },
-    { id: '3', columnId: '2', isFavorite: false, title: 'Harry Potter' },
-    { id: '4', columnId: '2', isFavorite: false, title: 'Star Wars' },
-    { id: '5', columnId: '3', isFavorite: false, title: 'The Witcher' },
-    { id: '6', columnId: '3', isFavorite: false, title: 'Skyrim' },
-    { id: '7', columnId: '4', isFavorite: false, title: 'Make the espresso' },
-    { id: '8', columnId: '4', isFavorite: false, title: 'Steam the milk (espresso machine method).' },
-    { id: '9', columnId: '4', isFavorite: false, title: 'OR, heat the milk on the stovetop then froth it.' },
-    { id: '10', columnId: '4', isFavorite: false, title: 'Serve.' }
+    { id: '1', columnId: '1', title: 'This is Going to Hurt', isFavorite: false},
+    { id: '2', columnId: '1', title: 'Interpreter of Maladies', isFavorite: false},
+    { id: '3', columnId: '2', title: 'Harry Potter', isFavorite: false},
+    { id: '4', columnId: '2', title: 'Star Wars', isFavorite: false},
+    { id: '5', columnId: '3', title: 'The Witcher', isFavorite: false},
+    { id: '6', columnId: '3', title: 'Skyrim', isFavorite: false},
+    { id: '7', columnId: '4', title: 'Make the espresso', isFavorite: false},
+    { id: '8', columnId: '4', title: 'Steam the milk (espresso machine method).', isFavorite: false},
+    { id: '9', columnId: '4', title: 'OR, heat the milk on the stovetop then froth it.', isFavorite: false},
+    { id: '10', columnId: '4', title: 'Serve.', isFavorite: false}
   ],
 
   lists: [
