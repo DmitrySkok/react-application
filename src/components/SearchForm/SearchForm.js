@@ -3,7 +3,7 @@ import styles from './SearchForm.module.scss';
 import Button from '../Button/Button';
 import { useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
-import { updateSearchString } from '../../redux/store';
+import { updateSearchString } from '../../redux/searchStringReducer';
 
 const SearchForm = () => {
 
@@ -17,7 +17,6 @@ const SearchForm = () => {
 
   useEffect(() => {
     dispatch(updateSearchString(''));
-    // setSearchString();
   }, []);
 
   return (
