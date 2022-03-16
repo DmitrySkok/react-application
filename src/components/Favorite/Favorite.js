@@ -9,7 +9,6 @@ import Card from '../Card/Card';
 const Favorite = () => {
 
   const favoriteCards = useSelector(state => getFilteredFavoriteCards(state));
-  console.log('favoriteCards: ', favoriteCards);
 
   if(favoriteCards.length === 0) return <PageTitle>No favorite cards</PageTitle>
   // <Navigate to="/" /> 
