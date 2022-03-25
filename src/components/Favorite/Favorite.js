@@ -4,13 +4,21 @@ import PageTitle from '../PageTitle/PageTitle';
 import { useSelector } from 'react-redux';
 import { getFilteredFavoriteCards } from '../../redux/cardsReducer';
 import Card from '../Card/Card';
+// import { useEffect } from 'react';
+// import { useNavigate } from 'react-router-dom';
 // import { Navigate } from 'react-router-dom';
 
 const Favorite = () => {
-
+  // const history = useNavigate();
   const favoriteCards = useSelector(state => getFilteredFavoriteCards(state));
 
-  if(favoriteCards.length === 0) return <PageTitle>No favorite cards</PageTitle>
+  // useEffect(()=>{
+  //   setTimeout(()=>{
+  //     history('/');
+  //   }, 2000);
+  // }, []);
+
+  if(!favoriteCards.length) return <PageTitle>No favorite cards</PageTitle>
   // <Navigate to="/" /> 
     return (
       <div>
